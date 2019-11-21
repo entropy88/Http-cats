@@ -1,8 +1,11 @@
 function toggle(id){
     let divToToggle=document.getElementById(id);
+    let btn=divToToggle.parentNode.getElementsByTagName("button")[0]
     if(divToToggle.style.display=="none"){
+        btn.textContent="Hide status code"
         divToToggle.style.display="block"
     } else {
+        btn.textContent="Show status code"
         divToToggle.style.display="none"
     }
 }
@@ -24,3 +27,4 @@ function toggle(id){
      }
  
 })()
+
